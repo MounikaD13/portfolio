@@ -27,7 +27,8 @@
         #projects h2 {
             color: white;
         }
-        #projects p{
+
+        #projects p {
             text-align: justify;
         }
 
@@ -43,6 +44,15 @@
             outline: none;
             border: 1px solid grey;
             background-color: grey;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-text {
+            min-height: 120px;
         }
     </style>
 </head>
@@ -73,10 +83,11 @@
                         <img width="100%"
                             src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9zcGl0YWwlMjBtYW5hZ2VtZW50fGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
                             class="card-img-top" alt="" />
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h5>Health Care System</h5>
                             <form action="https://hospital-react-ten.vercel.app/">
-                                <p>A Responsive web application developed using React.The system
+                                <p class="card-text flex-grow-1">A Responsive web application developed using React.The
+                                    system
                                     displays
                                     a list of doctors and patients, allowing users to view details easily. New doctors
                                     can
@@ -93,10 +104,11 @@
                         <img width="100%"
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi7YTXbSGtQGY8tE51lRun_O5LwSWaO3jULjjG7cKCZgVrjugYK90t0GTtoCtbkXzoLTc&usqp=CAU"
                             class="card-img-top" alt="" />
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h5>Digital Retail Platforms</h5>
                             <form action="https://palmonas-dmounika.vercel.app/">
-                                <p>A responsive and elegant jewellery showcase built with HTML, CSS,
+                                <p class="card-text flex-grow-1">A responsive and elegant jewellery showcase built with
+                                    HTML, CSS,
                                     and Bootstrap. Displays a variety of jewellery collections with clean layouts and
                                     modern design.
                                     Features interactive product cards with smooth hover effects and intuitive
@@ -110,12 +122,13 @@
                 <div class="col-md-4">
                     <div class="card h-100">
                         <img width="100%"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq6rAc4fwGK6m7wXOqYSNJyxLxzKl5bWEX8g&s"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq6rAc4fwGK6m7wXOqYSNJyxLxzKl5bWEX8g&s"
                             class="card-img-top" alt="" />
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h5>Task Tracking Application</h5>
                             <form action="https://react-to-do-sand.vercel.app/">
-                                <p>A simple and interactive task management application built using "React.js".
+                                <p class="card-text flex-grow-1">A simple and interactive task management application
+                                    built using "React.js".
                                     Users can add and delete tasks with ease.
                                     Tasks are stored in localStorage, ensuring persistence across sessions.
                                     The app uses React hooks (useState & useEffect) for real-time updates.
